@@ -1,3 +1,4 @@
+#include "Triangle.h"
 #include "Rectangle.h"
 #include <iostream>
 
