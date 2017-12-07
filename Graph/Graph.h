@@ -3,11 +3,12 @@
 
 class Graph {
 
+protected:
     std::string name;
     int nodes;
     std::vector<std::pair<int, int>> edges;
 
-    public:
+public:
     Graph();
     Graph(std::string name, int nodes);
     int numberOfNodes();
