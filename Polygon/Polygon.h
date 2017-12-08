@@ -1,5 +1,5 @@
-// #ifndef POLYGON_H
-// #define POLYGON_H
+#ifndef POLYGON_H
+#define POLYGON_H
 
 class Polygon {
 
@@ -16,4 +16,4 @@ public:
     virtual int area (void) = 0;
 };
 
-// #endif
+#endif
