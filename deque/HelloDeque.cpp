@@ -16,14 +16,13 @@ int main() {
     std::deque<int> deque(10, 0);
 
     printDequeContent(deque);
-    
+
     // Inserting elements in the deque
     for (int i = 0; i < deque.size(); ++i) {
         deque[i] = i + 1;
     }
 
     printDequeContent(deque);
-
 
     // Pushing new elements in the queue
     int newElements = 10;

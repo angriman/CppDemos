@@ -25,13 +25,13 @@ int main() {
 
     // Finding in a map
     char key = 'x';
-    std::map<char, int>::iterator find_a = map.find(key);
-    if (find_a == map.end()) {
+    std::map<char, int>::iterator find_key = map.find(key);
+    if (find_key == map.end()) {
         std::cout << "Element '" << key << "' not found" << '\n';
     }
     else {
-        std::cout << "Element 'a' was found, it's value is: ";
-        std::cout << find_a->second << '\n';
+        std::cout << "Element '" << key << "' was found, it's value is: ";
+        std::cout << find_key->second << '\n';
     }
 
 

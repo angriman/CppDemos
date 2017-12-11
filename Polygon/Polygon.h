@@ -1,3 +1,6 @@
+// Preprocessor GUARDS. They prevent multiple #include of the class 'Ploygon'
+// in the same file.
+
 #ifndef POLYGON_H
 #define POLYGON_H
 

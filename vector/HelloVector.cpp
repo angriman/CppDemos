@@ -14,7 +14,7 @@ int main() {
     v[9] = -2.4;
 
     // Accessing an element
-    std::cout << "Elment at position 8 = " << v[7] << "\n\n";
+    std::cout << "Elment at position 7 = " << v[7] << "\n\n";
 
     // Accessing the first and the last element of a vector
     double front = v.front();

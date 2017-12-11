@@ -15,7 +15,7 @@ int main() {
 
 
     // Filling with 1-10 ints
-    for (int i = 1; i < 11; ++i) {
+    for (int i = 1; i <= 10; ++i) {
         set.insert(i);
         multiset.insert(i);
     }

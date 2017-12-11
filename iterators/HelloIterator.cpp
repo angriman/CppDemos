@@ -12,7 +12,7 @@ int main() {
     // Nice trick: use auto
     auto lazyIter = v.begin();
 
-//     // Printing the value at which iter is pointing to
+    // Printing the value at which iter is pointing to
     std::cout << "\nMy iterator points to " << *iter << "\n\n";
 
     // Incrementing the pointer
@@ -25,6 +25,6 @@ int main() {
     for (; iter != v.end(); ++iter) {
         std::cout << "Item " << *iter << '\n';
     }
-    
+
     return 0;
 }
