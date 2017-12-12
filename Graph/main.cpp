@@ -18,7 +18,7 @@ int main() {
         int to = edge.second;
 
         std::cout << "Edge " << from << " , " << to;
-        
+
         if (g.addEdge(from, to)) {
             std::cout << " added!" << '\n';
         }

@@ -11,7 +11,7 @@ Graph::Graph(std::string name, int nodes) {
 }
 
 bool Graph::addEdge(int from, int to) {
-    if (from < nodes && to < nodes) {
+    if (from < nodes && to < nodes && from >=0 && to >=0) {
         edges.push_back(std::make_pair(from, to));
         return true;
     }
