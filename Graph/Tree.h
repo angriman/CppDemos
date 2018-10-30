@@ -6,6 +6,7 @@ public:
 	Tree();
 	Tree(int nodes);
 	Tree(const Tree &toCopy);
+	~Tree();
 	bool addEdge(int from, int to);
 
 private:
