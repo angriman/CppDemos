@@ -24,6 +24,8 @@ int main() {
 	std::cout << "Size of the stack " << stack.size() << std::endl;
 
 	std::cout << "Top element of the stack = ";
+
+	// NB: top() returns a const reference to the top element, not a copy.
 	printVector(stack.top());
 	return 0;
 }

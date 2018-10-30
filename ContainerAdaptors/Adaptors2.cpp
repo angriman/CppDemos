@@ -11,6 +11,8 @@ void printVector(const std::vector<int> &v) {
 }
 
 int main() {
+	// Here we create a stack of vectors.
+	// In this case, we use a std vector as underlying container.
 	std::stack<std::vector<int>, std::vector<std::vector<int>>> stack;
 
 	std::vector<int> first = {0, 1, 2};
@@ -19,7 +21,7 @@ int main() {
 	stack.push(first);
 	stack.push(second);
 
-	std::cout << "Size of the stack " << stack.size() << '\n';
+	std::cout << "Size of the stack " << stack.size() << std::endl;
 
 	std::cout << "Top element of the stack = ";
 	printVector(stack.top());
