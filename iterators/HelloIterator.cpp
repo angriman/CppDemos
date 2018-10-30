@@ -24,7 +24,7 @@ int main() {
 
 	// Using pointer to iterate
 	for (; iter != v.end(); ++iter) {
-		std::cout << "Item " << *iter << '\n';
+		std::cout << "Item " << *iter << std::endl;
 	}
 
 	return 0;
