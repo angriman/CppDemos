@@ -19,6 +19,7 @@ int main() {
 	++iter;
 	std::cout << "After ++ my iterator points to " << *iter << "\n\n";
 
+	// Decrementing the poiter so it points again to the first element of the vector.
 	--iter;
 
 	// Using pointer to iterate
