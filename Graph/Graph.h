@@ -1,21 +1,24 @@
-#include <string>
+#ifndef GRAPH_H_
+#define GRAPH_H_
+
 #include <vector>
 
 class Graph {
 
-protected:
-    std::string name;
-    int nodes;
-    std::vector<std::pair<int, int>> edges;
-
 public:
-    Graph();
-    Graph(std::string name, int nodes);
-    int numberOfNodes();
-    bool addEdge(int from, int to);
+	Graph();
+	Graph(int nodes);
+	Graph(const Graph &toCopy);
+	~Graph();
 
+	int numberOfNodes();
+	bool addEdge(int u, int v);
+
+protected:
+	int n;
+	std::vector<std::pair<int, int>> edges;
 };
 
-inline int Graph::numberOfNodes() {
-    return nodes;
-}
+inline int Graph::numberOfNodes() { return n; }
+
+#endif /* ifndef GRAPH_H_ */

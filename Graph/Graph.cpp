@@ -1,19 +1,27 @@
+#include <iostream>
+
 #include "Graph.h"
 
 Graph::Graph() {
-    this->name = "My awesome graph";
-    this->nodes = 0;
+	std::cout << "Default constructor." << std::endl;
+	n = 0;
 }
 
-Graph::Graph(std::string name, int nodes) {
-    this->name = name;
-    this->nodes = nodes;
+Graph::Graph(int n) {
+	std::cout << "Constructor with " << n << " n." << std::endl;
+	this->n = n;
 }
 
-bool Graph::addEdge(int from, int to) {
-    if (from < nodes && to < nodes && from >=0 && to >=0) {
-        edges.push_back(std::make_pair(from, to));
-        return true;
-    }
-    return false;
+Graph::Graph(const Graph &toCopy) {
+	std::cout << "Copy constructor." << std::endl;
+}
+
+Graph::~Graph() { std::cout << "Destructor." << std::endl; }
+
+bool Graph::addEdge(int u, int v) {
+	if (u < n && v < n && u >= 0 && v >= 0) {
+		edges.push_back(std::make_pair(u, v));
+		return true;
+	}
+	return false;
 }
