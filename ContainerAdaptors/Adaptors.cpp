@@ -2,7 +2,8 @@
 #include <stack>
 #include <vector>
 
-void printVector(std::vector<int> v) {
+// Note: we are using a const reference to v.
+void printVector(const std::vector<int> &v) {
 	std::cout << "{ ";
 	for (int i : v) {
 		std::cout << i << " ";
@@ -11,7 +12,7 @@ void printVector(std::vector<int> v) {
 }
 
 int main() {
-
+	// We define a new stack of vectors of integers.
 	std::stack<std::vector<int>> stack;
 
 	std::vector<int> first = {0, 1, 2};
@@ -20,7 +21,7 @@ int main() {
 	stack.push(first);
 	stack.push(second);
 
-	std::cout << "Size of the stack " << stack.size() << '\n';
+	std::cout << "Size of the stack " << stack.size() << std::endl;
 
 	std::cout << "Top element of the stack = ";
 	printVector(stack.top());
