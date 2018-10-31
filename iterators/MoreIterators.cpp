@@ -5,7 +5,7 @@
 int main(int argn, char **argv) {
 	// Vector
 	std::vector<int> numberVector = {5, 7, 2, 6, 8, 1};
-	std::cout << "Number vector: ";
+	std::cout << "My vector: ";
 	for (std::vector<int>::iterator it = numberVector.begin();
 	     it != numberVector.end(); it++) {
 		std::cout << *it << " ";

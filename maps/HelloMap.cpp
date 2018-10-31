@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
 	map['a'] = 200;
 	map['c'] = 300;
 
-	std::cout << "My map has " << map.size() << " elements.\n";
+	std::cout << "My map has " << map.size() << " elements." << std::endl;
 
 	// Map iterator: std::map<char,int>::iterator
 	// Note: a map is implemented using a search tree (usually red-black trees).
@@ -33,14 +33,13 @@ int main(int argc, char **argv) {
 		// I could also have used 'auto'
 		std::map<char, int>::iterator find_key = map.find(key);
 		if (find_key == map.end()) {
-			std::cout << "Element '" << key << "' not found.\n";
+			std::cout << "Element '" << key << "' not found." << std::endl;
 		} else {
 			std::cout << "Element '" << key << "' was found, its value is: ";
 			std::cout << find_key->second << std::endl;
 		}
 	}
 	std::cout << std::endl;
-
 
 	// Multimap example.
 	std::multimap<char, int> multimap;
@@ -53,7 +52,8 @@ int main(int argc, char **argv) {
 	multimap.insert(std::make_pair('a', 500));
 	multimap.insert(std::make_pair('c', 500));
 
-	std::cout << "My multimap has " << multimap.size() << " elements.\n";
+	std::cout << "My multimap has " << multimap.size() << " elements."
+	          << std::endl;
 
 	for (auto mapIter = multimap.begin(); mapIter != multimap.end(); ++mapIter) {
 		std::cout << "Key = " << mapIter->first << " ";

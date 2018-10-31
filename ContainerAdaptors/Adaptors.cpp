@@ -8,7 +8,7 @@ void printVector(const std::vector<int> &v) {
 	for (int i : v) {
 		std::cout << i << " ";
 	}
-	std::cout << "}\n";
+	std::cout << "}" << std::endl;
 }
 
 int main(int argc, char **argv) {

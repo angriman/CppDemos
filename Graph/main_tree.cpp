@@ -1,5 +1,6 @@
-#include "Tree.h"
 #include <iostream>
+
+#include "Tree.h"
 
 int main(int argc, char **argv) {
 	Tree tree;
