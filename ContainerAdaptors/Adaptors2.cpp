@@ -10,7 +10,7 @@ void printVector(const std::vector<int> &v) {
 	std::cout << "}\n";
 }
 
-int main() {
+int main(int argc, char **argv) {
 	// Here we create a stack of vectors.
 	// In this case, we use a std vector as underlying container.
 	std::stack<std::vector<int>, std::vector<std::vector<int>>> stack;

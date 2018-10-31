@@ -7,7 +7,7 @@
 * Playing with the interface
 **/
 
-int main() {
+int main(int argc, char **argv) {
 
     // Creating empty set and multiset
     std::set<int> set;

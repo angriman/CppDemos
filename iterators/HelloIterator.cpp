@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main(int argc, char **argv) {
 
 	// Creating a new STL vector
 	std::vector<double> v({1, 2, 3, 4, 5});

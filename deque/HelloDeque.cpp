@@ -10,7 +10,7 @@ void printDequeContent(std::deque<int> d) {
 	std::cout << std::endl;
 }
 
-int main() {
+int main(int argc, char **argv) {
 
 	// We use a fill constructor to fill the deque with 10 zeros.
 	std::deque<int> deque(10, 0);

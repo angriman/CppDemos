@@ -2,7 +2,7 @@
 #include <map>
 #include <vector>
 
-int main() {
+int main(int argc, char **argv) {
 
 	// Creating a new mepty map.
 	// KEYS: characters

@@ -11,7 +11,7 @@ void printVector(const std::vector<int> &v) {
 	std::cout << "}\n";
 }
 
-int main() {
+int main(int argc, char **argv) {
 	// We define a new stack of vectors of integers.
 	std::stack<std::vector<int>> stack;
 

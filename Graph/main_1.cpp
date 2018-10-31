@@ -2,7 +2,7 @@
 
 #include "Graph.h"
 
-int main() {
+int main(int argc, char **argv) {
 	Graph a;
 	std::cout << "After a" << std::endl;
 	Graph b = Graph();

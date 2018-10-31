@@ -1,7 +1,7 @@
 #include "Tree.h"
 #include <iostream>
 
-int main() {
+int main(int argc, char **argv) {
 	Tree tree;
 	tree = Tree(10);
 	int u = 0;

@@ -1,6 +1,6 @@
 #include "hello.cpp"
 
-int main() {
+int main(int argc, char **argv) {
    	hello(); 
     return 0;
 }

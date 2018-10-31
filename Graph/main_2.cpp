@@ -2,7 +2,7 @@
 
 #include "Graph.h"
 
-int main() {
+int main(int argc, char **argv) {
 
 	Graph defaultGraph;
 	Graph g(10);

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main(int argc, char **argv) {
 
 	// Creating a new vector of doubles with size 10
 	// using a filling constructor.
