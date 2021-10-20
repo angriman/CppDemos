@@ -4,7 +4,6 @@
 
 int main(int argc, char **argv) {
 	Graph a;
-	std::cout << "After default constructor" << std::endl;
 	Graph b = Graph();
 	Graph c(a);
 	Graph d = c;
