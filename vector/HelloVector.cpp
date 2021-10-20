@@ -23,12 +23,15 @@ int main(int argc, char **argv) {
 	std::cout << "First element is " << front << ", last is " << back
 	          << std::endl;
 
+    std::cout << "Capacity before push back: " << v.capacity() << std::endl;
 	// Inserting/deleting at the end
 	v.push_back(11.0);
 	back = v.back();
 	std::cout << "Last element is now " << back << std::endl;
 
+    std::cout << "Capacity before pop back: " << v.capacity() << std::endl;
 	v.pop_back();
+    std::cout << "Capacity after pop back: " << v.capacity() << std::endl;
 	back = v.back();
 	std::cout << "After the pop last element is " << back << std::endl;
 
