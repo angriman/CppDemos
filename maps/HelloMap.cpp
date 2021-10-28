@@ -43,7 +43,7 @@ int main(int argc, char **argv) {
     multimap.emplace('b', 100);
     multimap.emplace('a', 200);
     multimap.emplace('c', 300);
-
+    
     // Here we add some duplicate elements.
     multimap.emplace('b', 500);
     multimap.emplace('a', 500);
