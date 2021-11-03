@@ -11,14 +11,12 @@ public:
 	Graph(const Graph &toCopy);
 	~Graph();
 
-	int numberOfNodes();
+	int numberOfNodes() const { return n; };
 	bool addEdge(int u, int v);
 
 protected:
 	int n;
 	std::vector<std::pair<int, int>> edges;
 };
-
-inline int Graph::numberOfNodes() { return n; }
 
 #endif /* ifndef GRAPH_H_ */
